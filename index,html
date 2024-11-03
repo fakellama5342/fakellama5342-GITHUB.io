@@ -1,9 +1,10 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
 <head>
-<title>Mi Página de GitHub</title> 
-</head> <body> 
-<h1>¡Hola, mundo!</h1>
-<p>Bienvenido a mi página de GitHub Pages.</p>
+  <title>Mi Página de GitHub</title>
+</head>
+<body>
+  <h1>¡Hola, mundo!</h1>
+  <p>Bienvenido a mi página de GitHub Pages.</p>
 </body>
 </html>
