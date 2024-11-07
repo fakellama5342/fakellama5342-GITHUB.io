@@ -7,13 +7,104 @@
   <meta name="author" content="Steward Castillo">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <style>
-    nav a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #333;
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
     }
+    
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    
     nav a:hover {
-      text-decoration: underline.
+      text-decoration: underline;
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .project, .certifications, .contact, .social {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    ul li {
+      background: #f4f4f4;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    
+    ul li a {
+      color: #333;
+      text-decoration: none;
+    }
+    
+    ul li a:hover {
+      text-decoration: underline;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    form label {
+      margin: 10px 0 5px;
+    }
+    
+    form input, form textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    form button {
+      padding: 10px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    form button:hover {
+      background: #555;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
     }
   </style>
 </head>
@@ -22,111 +113,101 @@
     <a href="#about">Sobre mí</a>
     <a href="#projects">Proyectos</a>
     <a href="#certifications">Certificaciones</a>
+    <a href="#skills">Habilidades Técnicas</a>
     <a href="#contact">Contacto</a>
     <a href="#social">Redes Sociales</a>
   </nav>
   
-  <h1>¡Hola, mundo!</h1>
-  <p>Bienvenido a mi portafolio de ciberseguridad.</p>
-  
-  <h2 id="about">Sobre mí</h2>
-  <p>Soy un apasionado por la ciberseguridad con una fuerte motivación y disciplina, aprendiendo de este asombroso mundo.</p>
-  <img src="https://media.licdn.com/dms/image/v2/D4E35AQFbcajsSWZcjQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1703622037130?e=1731200400&v=beta&t=efQ42Uyk5TKLJGal3-7sBEQjnWWVTpCTHcevgnAipxw" alt="Foto de perfil">
-  
-  <h2 id="projects">Proyectos</h2>
-
-  <div class="project">
-    <h3>Simulación de Ataques</h3>
-    <p><strong>Descripción:</strong> Este proyecto consistió en simular varios ataques cibernéticos en un entorno controlado para identificar vulnerabilidades y probar técnicas de defensa.</p>
-    <p><strong>Objetivos:</strong></p>
-    <ul>
-      <li>Identificar vulnerabilidades en un sistema objetivo.</li>
-      <li>Aplicar y probar diferentes técnicas de ataque.</li>
-      <li>Desarrollar contramedidas efectivas para mitigar las vulnerabilidades encontradas.</li>
-    </ul>
-    <p><strong>Herramientas Utilizadas:</strong> Nmap, Metasploit, Wireshark</p>
-    <p><strong>Resultados:</strong></p>
-    <ul>
-      <li>Descubrimiento de 5 vulnerabilidades críticas.</li>
-      <li>Implementación de parches y medidas de seguridad para cerrar las brechas detectadas.</li>
-      <li>Documentación detallada del proceso de ataque y mitigación para futuros proyectos.</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <h3>Auditoría de Seguridad de Aplicaciones Web</h3>
-    <p><strong>Descripción:</strong> Realicé una auditoría de seguridad en diversas aplicaciones web para identificar vulnerabilidades y mejorar la postura de seguridad de estas aplicaciones.</p>
-    <p><strong>Objetivos:</strong></p>
-    <ul>
-      <li>Evaluar la seguridad de aplicaciones web en diferentes entornos.</li>
-      <li>Identificar y reportar vulnerabilidades críticas.</li>
-      <li>Proporcionar recomendaciones para mejorar la seguridad.</li>
-    </ul>
-    <p><strong>Herramientas Utilizadas:</strong> Burp Suite, OWASP ZAP, Nikto</p>
-    <p><strong>Resultados:</strong></p>
-    <ul>
-      <li>Identificación de vulnerabilidades XSS, SQLi y CSRF en varias aplicaciones.</li>
-      <li>Recomendaciones detalladas de mitigación para desarrolladores.</li>
-      <li>Mejoras significativas en la seguridad de las aplicaciones auditadas.</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <h3>Análisis Forense de Incidentes</h3>
-    <p><strong>Descripción:</strong> Este proyecto involucró la realización de análisis forenses en incidentes de seguridad para identificar la causa raíz y el impacto de los ataques.</p>
-    <p><strong>Objetivos:</strong></p>
-    <ul>
-      <li>Investigar incidentes de seguridad reportados.</li>
-      <li>Recopilar y analizar evidencia digital.</li>
-      <li>Determinar la causa y el alcance del incidente.</li>
-    </ul>
-    <p><strong>Herramientas Utilizadas:</strong> Autopsy, EnCase, FTK Imager</p>
-    <p><strong>Resultados:</strong></p>
-    <ul>
-      <li>Identificación de la fuente del ataque y los métodos utilizados.</li>
-      <li>Recuperación de datos comprometidos.</li>
-      <li>Propuestas de mejoras en políticas y procedimientos de seguridad.</li>
-    </ul>
-  </div>
-
-  <h2 id="skills">Habilidades Técnicas</h2>
-  <ul>
-    <li><strong>Lenguajes de Programación:</strong> Python, Bash</li>
-    <li><strong>Herramientas de Seguridad:</strong> Nmap, Metasploit, Wireshark</li>
-    <li><strong>Análisis Forense:</strong> Autopsy</li>
-    <li><strong>Sistemas Operativos:</strong> Windows, Linux (Ubuntu, Kali)</li>
-    <li><strong>Redes y Protocolos:</strong> TCP/IP, VPN</li>
-  </ul>
-
-  <h2 id="contact">Contacto</h2>
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name" required> 
+  <div class="container">
+    <h1>¡Hola, mundo!</h1>
+    <p>Bienvenido a mi portafolio de ciberseguridad.</p>
     
-    <label for="email">Email:</label> 
-    <input type="email" id="email" name="email" required> 
+    <h2 id="about">Sobre mí</h2>
+    <p>Soy un apasionado por la ciberseguridad con una fuerte motivación y disciplina, aprendiendo de este asombroso mundo.</p>
+    <img src="https://media.licdn.com/dms/image/v2/D4E35AQFbcajsSWZcjQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1703622037130?e=1731200400&v=beta&t=efQ42Uyk5TKLJGal3-7sBEQjnWWVTpCTHcevgnAipxw" alt="Foto de perfil de Steward Castillo">
     
-    <label for="message">Mensaje:</label> 
-    <textarea id="message" name="message" required></textarea>
-    
-    <button type="submit">Enviar</button> 
-  </form>
-  <p>o contactame por mis redes sociales:</p>
-  <ul> 
-    <li><a href="https://twitter.com/@steward06825423">Twitter</a></li>
-    <li><a href="https://linkedin.com/in/steward-castillo-rodríguez-268755217">LinkedIn</a>
-    </li> <li><a href="mailto:tucorreo@example.com">castillosteward183@gmail.com</a></li>
-  </ul>
-<h2 id="social">Redes Sociales</h2>
-<ul>
-  <li><a href="https://twitter.com/@steward06825423">Twitter</a></li>
-  <li><a href="https://linkedin.com/in/steward-castillo-rodríguez-268755217">LinkedIn</a></li>
-  <li><a href="https://github.com/steward-castillo">GitHub</a></li>
-  <footer> 
-    <p>Sígueme en las redes sociales:</p> 
-    <a href="https://twitter.com/@steward06825423">Twitter</a></a></li>
-    |<a href="https://linkedin.com/in/steward-castillo-rodríguez-268755217">LinkedIn</a> 
-    <p>© 2023 Fakellama5342. Todos los derechos reservados.</p>
-    </footer> 
-</body> 
-</html>
+    <h2 id="projects">Proyectos</h2>
+    <div class="project">
+      <h3>Simulación de Ataques</h3>
+      <p><strong>Descripción:</strong> Este proyecto consistió en simular varios ataques cibernéticos en un entorno controlado para identificar vulnerabilidades y probar técnicas de defensa.</p>
+      <p><strong>Objetivos:</strong></p>
+      <ul>
+        <li>Identificar vulnerabilidades en un sistema objetivo.</li>
+        <li>Aplicar y probar diferentes técnicas de ataque.</li>
+        <li>Desarrollar contramedidas efectivas para mitigar las vulnerabilidades encontradas.</li>
+      </ul>
+      <p><strong>Herramientas Utilizadas:</strong> Nmap, Metasploit, Wireshark</p>
+      <p><strong>Resultados:</strong></p>
+      <ul>
+        <li>Descubrimiento de 5 vulnerabilidades críticas.</li>
+        <li>Implementación de parches y medidas de seguridad para cerrar las brechas detectadas.</li>
+        <li>Documentación detallada del proceso de ataque y mitigación para futuros proyectos.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Auditoría de Seguridad de Aplicaciones Web</h3>
+      <p><strong>Descripción:</strong> Realicé una auditoría de seguridad en diversas aplicaciones web para identificar vulnerabilidades y mejorar la postura de seguridad de estas aplicaciones.</p>
+      <p><strong>Objetivos:</strong></p>
+      <ul>
+        <li>Evaluar la seguridad de aplicaciones web en diferentes entornos.</li>
+        <li>Identificar y reportar vulnerabilidades críticas.</li>
+        <li>Proporcionar recomendaciones para mejorar la seguridad.</li>
+      </ul>
+      <p><strong>Herramientas Utilizadas:</strong> Burp Suite, OWASP ZAP, Nikto</p>
+      <p><strong>Resultados:</strong></p>
+      <ul>
+        <li>Identificación de vulnerabilidades XSS, SQLi y CSRF en varias aplicaciones.</li>
+        <li>Recomendaciones detalladas de mitigación para desarrolladores.</li>
+        <li>Mejoras significativas en la seguridad de las aplicaciones auditadas.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Análisis Forense de Incidentes</h3>
+      <p><strong>Descripción:</strong> Este proyecto involucró la realización de análisis forenses en incidentes de seguridad para identificar la causa raíz y el impacto de los ataques.</p>
+      <p><strong>Objetivos:</strong></p>
+      <ul>
+        <li>Investigar incidentes de seguridad reportados.</li>
+        <li>Recopilar y analizar evidencia digital.</li>
+        <li>Determinar la causa y el alcance del incidente.</li>
+      </ul>
+      <p><strong>Herramientas Utilizadas:</strong> Autopsy, EnCase, FTK Imager</p>
+      <p><strong>Resultados:</strong></p>
+      <ul>
+        <li>Identificación de la fuente del ataque y los métodos utilizados.</li>
+        <li>Recuperación de datos comprometidos.</li>
+        <li>Propuestas de mejoras en políticas y procedimientos de seguridad.</li>
+      </ul>
+    </div>
+
+    <h2 id="skills">Habilidades Técnicas</h2>
+    <ul>
+      <li><strong>Lenguajes de Programación:</strong> Python, Bash</li>
+      <li><strong>Herramientas de Seguridad:</strong> Nmap, Metasploit, Wireshark</li>
+      <li><strong>Análisis Forense:</strong> Autopsy</li>
+      <li><strong>Sistemas Operativos:</strong> Windows, Linux (Ubuntu, Kali)</li>
+      <li><strong>Redes y Protocolos:</strong> TCP/IP, VPN</li>
+    </ul>
+
+    <h2 id="contact">Contacto</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required> 
+      
+      <label for="email">Email:</label> 
+      <input type="email" id="email" name="email" required> 
+      
+      <label for="message">Mensaje:</label> 
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Enviar</button> 
+    </form>
+    <p>O contáctame a través de mis redes sociales:</p>
+    <ul>
+      <li><a href="https://twitter.com/@steward06825423">Seguir en Twitter</a></li>
+      <li><a href="https://linkedin.com/in/steward-castillo-rodríguez-268755217">Ver perfil en LinkedIn</a></li>
+      <li><a href="mailto:castillosteward183@gmail.com">Correo Electrónico</a></li>
+    </ul>
+
+    <[_{{{CITATION{{{_1{](https://github.com/CarlNierves/CarlNierves.github.io/tree/faf325f68517f148ef66653d9dbd3488d7e85b91/index.php)
